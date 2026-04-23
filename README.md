@@ -1,102 +1,101 @@
-# LEGADO 48° - Página "Próximamente"
+# LEGADO 48° — Landing Page
 
-Una página de aterrizaje moderna y elegante para LEGADO 48°, diseñada con un enfoque mobile-first y utilizando la paleta de colores de la marca.
+Official website for **LEGADO 48°**, an artisanal mezcal brand from Oaxaca, México. Handcrafted Mezcal Gummies and Mezcal Chocolates made with authentic Oaxacan flavors.
 
-## 🌟 Características
+🌐 **Live site:** [legado48.com](https://legado48.com)
 
-- **Diseño Mobile-First**: Optimizado para todos los dispositivos (móvil, tablet, escritorio)
-- **Paleta de Colores de Marca**: Utiliza los colores oficiales de LEGADO 48°
-- **Responsive**: Se adapta fluidamente a diferentes tamaños de pantalla
-- **Accesible**: Alto contraste y cumple con estándares WCAG AA+
-- **HTML5 Semántico**: Código limpio y bien estructurado
-- **Sin Dependencias**: Solo HTML y CSS puro
-- **SEO Optimizado**: Meta tags completos para redes sociales
+![LEGADO 48° Landing Page](docs/legado48.png)
 
-## 🎨 Colores de la Marca
+---
 
-### Subset Seleccionado
+## Features
 
-| Uso | Color | Hex | Nombre |
-|-----|-------|-----|--------|
-| Background | Brunswick Green | `#03463E` | Verde Brunswick (oscuro) |
-| Brand Name | Lemon Chiffon | `#FBEFC5` | Crema Limón (claro) |
-| Accent/Highlight | Jonquil | `#FFCA05` | Amarillo Jonquil |
-| Card Borders | Keppel | `#37AF9F` | Verde Keppel (turquesa) |
-| Hover/Interaction | Giants Orange | `#EF6122` | Naranja Giants |
+- **Mobile-first responsive design** — base styles for mobile, scaling up with `min-width` breakpoints
+- **Bilingual (ES / EN)** — instant language toggle with no page reload
+- **Lightbox gallery** — keyboard-navigable image viewer with prev/next and ESC support
+- **Optimized images** — WebP with PNG fallback via `<picture>`, ~96% smaller than originals
+- **Pre-filled order email** — mailto with structured form body, language-aware
+- **Scroll reveal animations** — IntersectionObserver-based, no library dependency
+- **SEO-ready** — JSON-LD structured data, canonical tag, OG social preview image, sitemap, robots.txt
+- **Vercel-configured** — cache headers for assets (1 year immutable), no-cache for HTML
 
-Para más información sobre todos los colores, consulta [`docs/colores.md`](docs/colores.md).
+---
 
-## 📱 Contacto
+## Tech Stack
 
-- **Facebook**: https://www.facebook.com/LEGADO48/
-- **Instagram**: https://www.instagram.com/legado_48
-- **Email**: ventaslegado48@gmail.com
-- **Teléfono**: 951 477 2122
+Pure HTML + CSS + vanilla JS. No build step, no framework, no dependencies beyond CDN fonts and icons.
 
-## 🚀 Uso
+- **Google Fonts** — Montserrat + Playfair Display
+- **Font Awesome 6** — icons
+- **Vercel** — hosting and CDN
 
-### Desarrollo
+---
 
-Para ver la página localmente, simplemente abre `index.html` en tu navegador:
-
-```bash
-# Abre index.html en tu navegador
-open index.html
-```
-
-### Despliegue
-
-La página es estática y puede ser desplegada en cualquier servicio de hosting estático:
-
-- **Netlify**: Sube los archivos a un repositorio git
-- **Vercel**: Conecta tu repositorio
-- **GitHub Pages**: Habilita GitHub Pages en tu repositorio
-- **Cualquier hosting**: Sube `index.html` y `style.css` a tu servidor
-
-## 📂 Estructura de Archivos
+## Project Structure
 
 ```
 legado48/
-├── docs/                    # Documentación de la marca y desarrollo
-│   ├── guia-de-marca.md    # Guía de la marca
-│   ├── colores.md          # Sistema de colores
-│   ├── informacion-contacto.md  # Información de contacto
-│   ├── patrones-diseno.md  # Patrones de diseño
-│   └── guia-desarrollo.md  # Guía de desarrollo
-├── index.html               # Página principal
-├── style.css                # Hoja de estilos
-├── README.md                # Este archivo
-└── .gitignore              # Archivos ignorados por Git
+├── assets/
+│   └── images/              # Optimized WebP + PNG product images & OG preview
+├── docs/                    # Brand documentation (not deployed to Vercel)
+├── index.html               # Main page — all HTML, CSS, and JS in one file
+├── favicon.svg
+├── robots.txt
+├── sitemap.xml
+├── vercel.json              # Cache headers and security headers
+├── .vercelignore            # Excludes docs/ and notes/ from deployment
+└── .gitignore
 ```
 
-## 🎯 Breakpoints Responsive
+---
 
-- **Móvil**: 320px - 767px (tarjetas apiladas verticalmente)
-- **Tablet**: 768px - 1023px (grid 2x2)
-- **Escritorio**: 1024px+ (horizontal layout)
-- **Pantallas grandes**: 1440px+ (tipografía mejorada)
+## Local Development
 
-## 🛠️ Tecnologías
+No build step required — just open the file:
 
-- HTML5
-- CSS3 (con CSS Variables y Flexbox/Grid)
-- Font Awesome 6 (CDN) para iconos
-- Google Fonts - Montserrat (CDN)
+```bash
+open index.html
+```
 
-## 📚 Documentación
+Or serve it locally to test caching behavior:
 
-Para más detalles sobre la marca, colores y patrones de diseño, consulta la carpeta [`docs/`](docs/):
+```bash
+npx serve .
+```
 
-- [`guia-de-marca.md`](docs/guia-de-marca.md) - Visión general de la marca
-- [`colores.md`](docs/colores.md) - Paleta de colores completa
-- [`informacion-contacto.md`](docs/informacion-contacto.md) - Datos de contacto
-- [`patrones-diseno.md`](docs/patrones-diseno.md) - Patrones de diseño reutilizables
-- [`guia-desarrollo.md`](docs/guia-desarrollo.md) - Guía técnica para desarrolladores
+---
 
-## 📄 Licencia
+## Deployment
 
-© 2024 LEGADO 48°. Todos los derechos reservados.
+Connected to Vercel via GitHub. Every push to `main` triggers an automatic deploy.
 
-## ✨ Créditos
+- `assets/` — cached for 1 year (immutable)
+- `index.html` — always fresh (no-cache)
+- `docs/` and `notes/` — excluded from deployment via `.vercelignore`
 
-Diseñado y desarrollado con ❤️ para LEGADO 48°.
+---
+
+## Brand
+
+| | |
+|---|---|
+| **Products** | Mezcal Gummies (Worm Salt, Tepextate, Passion Fruit) · Mezcal Chocolates |
+| **Origin** | Oaxaca de Juárez, México |
+| **Color palette** | `#0A0A0A` · `#2A9D8F` · `#F0EDE4` |
+| **Instagram** | [@legado_48](https://www.instagram.com/legado_48) |
+| **Facebook** | [@LEGADO48](https://www.facebook.com/LEGADO48/) |
+| **Email** | ventaslegado48@gmail.com |
+| **Phone** | 951 477 2122 |
+
+---
+
+## Developer
+
+Built by **Juan Vásquez**
+
+- 🌐 [juanvasquez.dev](https://www.juanvasquez.dev)
+- 🔀 GitHub @JuanVqz
+
+---
+
+© 2026 LEGADO 48°. All rights reserved. See [LICENSE](LICENSE).

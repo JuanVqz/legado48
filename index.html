@@ -3,82 +3,1849 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LEGADO 48° - Próximamente. Algo increíble está por llegar. Contáctanos en ventaslegado48@gmail.com o llámanos al 951 477 2122">
-  <meta name="keywords" content="LEGADO 48°, coming soon, próximamente, Oaxaca, México">
-  <meta name="author" content="LEGADO 48°">
+  <meta name="description" content="LEGADO 48° — Gomitas de Mezcal y Chocolates con Mezcal. Hecho en Oaxaca, México.">
 
-  <!-- OpenGraph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://legado48.com/">
-  <meta property="og:title" content="LEGADO 48° | Próximamente">
-  <meta property="og:description" content="Algo increíble está por llegar. Síguenos en redes sociales.">
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://legado48.com/">
+  <meta property="og:title"       content="LEGADO 48° | Gomitas de Mezcal · Hecho en Oaxaca">
+  <meta property="og:description" content="Gomitas de Mezcal y Chocolates con Mezcal. El sabor que se hereda.">
+  <meta property="og:image"       content="https://legado48.com/assets/images/og-preview.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="es_MX">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://legado48.com/">
-  <meta property="twitter:title" content="LEGADO 48° | Próximamente">
-  <meta property="twitter:description" content="Algo increíble está por llegar. Síguenos en redes sociales.">
+  <!-- Twitter/X card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="LEGADO 48° | Gomitas de Mezcal · Hecho en Oaxaca">
+  <meta name="twitter:description" content="Gomitas de Mezcal y Chocolates con Mezcal. El sabor que se hereda.">
+  <meta name="twitter:image"       content="https://legado48.com/assets/images/og-preview.jpg">
 
-  <title>LEGADO 48° | Próximamente</title>
+  <title>LEGADO 48° | Hecho en Oaxaca</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- Google Fonts - Montserrat -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://legado48.com/">
+
+  <!-- Preload hero image — eliminates LCP delay -->
+  <link rel="preload" as="image" href="assets/images/gomitas-trio-b.webp" type="image/webp">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LEGADO 48°",
+      "url": "https://legado48.com",
+      "logo": "https://legado48.com/assets/images/og-preview.jpg",
+      "description": "Gomitas de Mezcal y Chocolates con Mezcal elaborados artesanalmente en Oaxaca, México.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Oaxaca de Juárez, México"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oaxaca de Juárez",
+        "addressRegion": "Oaxaca",
+        "addressCountry": "MX"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+52-951-477-2122",
+        "email": "ventaslegado48@gmail.com",
+        "contactType": "sales",
+        "availableLanguage": ["Spanish", "English"]
+      },
+      "sameAs": [
+        "https://www.instagram.com/legado_48",
+        "https://www.facebook.com/LEGADO48/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Productos LEGADO 48°",
+      "description": "Gomitas de Mezcal y Chocolates con Mezcal artesanales de Oaxaca",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Chocolates con Mezcal",
+            "description": "Chocolates finos elaborados con cacao de calidad e infusionados con la calidez y carácter del mezcal oaxaqueño.",
+            "brand": { "@type": "Brand", "name": "LEGADO 48°" },
+            "image": "https://legado48.com/assets/images/chocolates-con-mezcal.webp",
+            "countryOfOrigin": "MX",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "seller": { "@type": "Organization", "name": "LEGADO 48°" }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Gomitas de Mezcal — Sal de Gusano",
+            "description": "Gomitas de mezcal con la icónica sal de gusano tradicional de Oaxaca.",
+            "brand": { "@type": "Brand", "name": "LEGADO 48°" },
+            "image": "https://legado48.com/assets/images/gomitas-sal-de-gusano.webp",
+            "countryOfOrigin": "MX",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "seller": { "@type": "Organization", "name": "LEGADO 48°" }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "Gomitas de Mezcal — Tepextate",
+            "description": "Gomitas inspiradas en el agave silvestre Tepextate, con perfil herbáceo y complejo.",
+            "brand": { "@type": "Brand", "name": "LEGADO 48°" },
+            "image": "https://legado48.com/assets/images/gomitas-tepextate.webp",
+            "countryOfOrigin": "MX",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "seller": { "@type": "Organization", "name": "LEGADO 48°" }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "Gomitas de Mezcal — Maracuyá",
+            "description": "Gomitas de mezcal con acidez tropical de maracuyá y el carácter ahumado del mezcal oaxaqueño.",
+            "brand": { "@type": "Brand", "name": "LEGADO 48°" },
+            "image": "https://legado48.com/assets/images/gomitas-maracuya.webp",
+            "countryOfOrigin": "MX",
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "seller": { "@type": "Organization", "name": "LEGADO 48°" }
+            }
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ═══════════════════════════════════════════
+       DESIGN SYSTEM — LEGADO 48°
+       Mobile-first: base = mobile, scale up with min-width
+    ═══════════════════════════════════════════ */
+    :root {
+      --black:      #0A0A0A;
+      --teal:       #2A9D8F;
+      --teal-dark:  #1E7A6F;
+      --teal-light: #3CBDAD;
+      --cream:      #F0EDE4;
+      --cream-dark: #D9D4C7;
+      --font-main:  'Montserrat', sans-serif;
+      --font-serif: 'Playfair Display', serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-main);
+      background: var(--black);
+      color: var(--cream);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ─── Utils ─── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    @media (min-width: 768px) { .container { padding: 0 32px; } }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+    .tag::before { content: '— '; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-main);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.28s ease;
+      border: none;
+    }
+    @media (min-width: 768px) { .btn { padding: 16px 36px; } }
+
+    .btn-teal { background: var(--teal); color: var(--black); }
+    .btn-teal:hover { background: var(--teal-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(42,157,143,.32); }
+
+    .btn-outline { background: transparent; color: var(--cream); border: 1.5px solid rgba(240,237,228,.35); }
+    .btn-outline:hover { border-color: var(--teal); color: var(--teal); transform: translateY(-2px); }
+
+    .btn-dark { background: var(--black); color: var(--cream); }
+    .btn-dark:hover { background: #1a1a1a; transform: translateY(-2px); }
+
+    .btn-ghost-dark { background: transparent; color: var(--black); border: 1.5px solid rgba(10,10,10,.3); }
+    .btn-ghost-dark:hover { border-color: var(--black); transform: translateY(-2px); }
+
+    /* ─── Section header ─── */
+    .section-header { margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .section-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 56px;
+      }
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+      line-height: 1.05;
+    }
+    .section-title span { color: var(--teal); }
+    .section-title-dark { color: var(--black); }
+    .section-title-dark span { color: var(--teal-dark); }
+    .section-desc {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: rgba(240,237,228,.5);
+      margin-top: 12px;
+    }
+    @media (min-width: 768px) { .section-desc { max-width: 340px; text-align: right; margin-top: 0; } }
+
+    /* ═══════════════════════════════════════════
+       NAV
+    ═══════════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      transition: background .35s, padding .35s, backdrop-filter .35s;
+    }
+    @media (min-width: 768px) { .nav { padding: 24px 32px; } }
+
+    .nav.scrolled {
+      background: rgba(10,10,10,.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(42,157,143,.14);
+    }
+    @media (min-width: 768px) { .nav.scrolled { padding: 14px 32px; } }
+
+    .nav-logo { font-size: 1rem; font-weight: 900; letter-spacing: .1em; color: var(--cream); }
+    @media (min-width: 768px) { .nav-logo { font-size: 1.1rem; } }
+    .nav-logo span { color: var(--teal); }
+
+    .nav-right { display: flex; align-items: center; gap: 12px; }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+    }
+    @media (min-width: 900px) { .nav-links { display: flex; } }
+    .nav-links a {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(240,237,228,.65);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      background: rgba(240,237,228,.08);
+      border: 1px solid rgba(240,237,228,.15);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      font-family: var(--font-main);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      padding: 6px 10px;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: rgba(240,237,228,.45);
+      transition: all .2s;
+    }
+    .lang-btn.active { background: var(--teal); color: var(--black); }
+    .lang-btn:hover:not(.active) { color: var(--cream); }
+
+    .nav-cta {
+      display: none;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 9px 20px;
+      background: var(--teal);
+      color: var(--black);
+      border-radius: 2px;
+      transition: background .2s;
+    }
+    @media (min-width: 900px) { .nav-cta { display: block; } }
+    .nav-cta:hover { background: var(--teal-light); }
+
+    .nav-hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    @media (min-width: 900px) { .nav-hamburger { display: none; } }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--cream); transition: all .3s; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 190;
+      background: rgba(10,10,10,.97);
+      backdrop-filter: blur(14px);
+      padding: 90px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transform: translateY(-100%);
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+    }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      color: rgba(240,237,228,.7);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(240,237,228,.07);
+      transition: color .2s;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--teal); }
+
+    /* ═══════════════════════════════════════════
+       HERO — mobile first
+    ═══════════════════════════════════════════ */
+    .hero {
+      min-height: 100dvh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(42,157,143,.09) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(42,157,143,.05) 0%, transparent 55%),
+        var(--black);
+    }
+
+    /* Decorative vertical line */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(42,157,143,.15) 30%, rgba(42,157,143,.15) 70%, transparent);
+      display: none;
+    }
+    @media (min-width: 1024px) { .hero-bg::after { display: block; } }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      padding: 100px 20px 80px;
+      text-align: center;
+    }
+    @media (min-width: 768px) { .hero-inner { padding: 120px 32px 100px; } }
+    @media (min-width: 1024px) {
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 32px;
+        min-height: 100dvh;
+      }
+    }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 1024px) { .hero-eyebrow { justify-content: flex-start; } }
+    .hero-eyebrow-line { width: 32px; height: 1px; background: var(--teal); }
+    .hero-eyebrow-text { font-size: 0.6rem; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--teal); }
+
+    .hero-title {
+      font-size: clamp(3.5rem, 14vw, 6.5rem);
+      font-weight: 900;
+      line-height: .9;
+      letter-spacing: -.02em;
+      color: var(--cream);
+      margin-bottom: 10px;
+    }
+    .hero-title-deg { color: var(--teal); font-style: italic; }
+
+    .hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-style: italic;
+      color: rgba(240,237,228,.5);
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: rgba(240,237,228,.6);
+      max-width: 460px;
+      margin: 0 auto 36px;
+    }
+    @media (min-width: 1024px) { .hero-desc { margin: 0 0 36px; } }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1024px) { .hero-actions { justify-content: flex-start; } }
+
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(240,237,228,.09);
+    }
+    @media (min-width: 1024px) { .hero-badges { justify-content: flex-start; } }
+    .hero-badge { display: flex; align-items: center; gap: 10px; }
+    .hero-badge-icon {
+      width: 36px; height: 36px;
+      border: 1px solid rgba(42,157,143,.35);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal); font-size: .85rem; flex-shrink: 0;
+    }
+    .hero-badge-text { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: rgba(240,237,228,.45); }
+    .hero-badge-text strong { display: block; color: var(--cream); font-weight: 700; }
+
+    /* Hero visual — hidden on mobile, shown ≥1024 */
+    .hero-visual {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    @media (min-width: 1024px) { .hero-visual { display: flex; } }
+
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(42,157,143,.1);
+    }
+    .hero-ring:nth-child(1) { width: 480px; height: 480px; }
+    .hero-ring:nth-child(2) { width: 350px; height: 350px; border-color: rgba(42,157,143,.16); }
+
+    .hero-products-img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 460px;
+      filter: drop-shadow(0 40px 70px rgba(0,0,0,.65));
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+
+    /* Mobile hero product strip */
+    .hero-product-strip {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin: 32px -20px 0;
+      overflow: hidden;
+    }
+    .hero-product-strip img {
+      width: 33.3%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.5));
+    }
+    @media (min-width: 1024px) { .hero-product-strip { display: none; } }
+
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+    .hero-scroll-text { font-size: .58rem; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: rgba(240,237,228,.25); }
+    .hero-scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(42,157,143,.6), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%{transform:scaleY(0);transform-origin:top}
+      50%{transform:scaleY(1);transform-origin:top}
+      51%{transform:scaleY(1);transform-origin:bottom}
+      100%{transform:scaleY(0);transform-origin:bottom}
+    }
+
+    /* ═══════════════════════════════════════════
+       TICKER
+    ═══════════════════════════════════════════ */
+    .ticker { background: var(--teal); padding: 12px 0; overflow: hidden; }
+    .ticker-inner { display: flex; white-space: nowrap; animation: ticker 22s linear infinite; }
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 24px;
+      font-size: .6rem;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+    .ticker-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--black); opacity: .35; flex-shrink: 0; }
+    @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+    /* ═══════════════════════════════════════════
+       MANIFESTO
+    ═══════════════════════════════════════════ */
+    .manifesto {
+      background: var(--cream);
+      padding: 64px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) { .manifesto { padding: 80px 0; } }
+    @media (min-width: 1024px) { .manifesto { padding: 110px 0; } }
+
+    .manifesto::before {
+      content: '48°';
+      position: absolute;
+      top: -30px; right: -15px;
+      font-size: 40vw;
+      font-weight: 900;
+      color: rgba(10,10,10,.035);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .manifesto-inner { position: relative; }
+    @media (min-width: 1024px) {
+      .manifesto-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; }
+    }
+
+    .manifesto-left .tag { color: var(--teal-dark); }
+
+    .manifesto-headline {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--black);
+      letter-spacing: -.02em;
+    }
+    .manifesto-headline em { font-style: italic; font-family: var(--font-serif); color: var(--teal-dark); }
+
+    .manifesto-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 36px;
+    }
+    .stat { background: var(--black); padding: 22px 16px; text-align: center; }
+    @media (min-width: 768px) { .stat { padding: 28px 20px; } }
+    .stat-number { font-size: 1.8rem; font-weight: 900; color: var(--teal-light); letter-spacing: -.02em; line-height: 1; margin-bottom: 6px; }
+    @media (min-width: 768px) { .stat-number { font-size: 2.2rem; } }
+    .stat-label { font-size: .6rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(240,237,228,.45); }
+
+    .manifesto-right { margin-top: 40px; }
+    @media (min-width: 1024px) { .manifesto-right { margin-top: 0; } }
+    .manifesto-right p { font-size: .9rem; line-height: 1.85; color: rgba(10,10,10,.6); margin-bottom: 18px; }
+    .manifesto-right p:last-child { margin-bottom: 0; }
+
+    /* ═══════════════════════════════════════════
+       PRODUCTOS
+    ═══════════════════════════════════════════ */
+    .productos { background: var(--black); padding: 64px 0; }
+    @media (min-width: 768px) { .productos { padding: 80px 0; } }
+    @media (min-width: 1024px) { .productos { padding: 110px 0; } }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+    @media (min-width: 1024px) { .products-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .product-card { background: #111; position: relative; overflow: hidden; cursor: pointer; transition: transform .38s ease; }
+    .product-card:hover { transform: translateY(-6px); z-index: 2; }
+
+    .product-card-top {
+      aspect-ratio: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) { .product-card-top { padding: 32px 24px; } }
+
+    .product-card:nth-child(1) .product-card-top { background: #0E1310; }
+    .product-card:nth-child(2) .product-card-top { background: #0C1412; }
+    .product-card:nth-child(3) .product-card-top { background: #0E1410; }
+    .product-card:nth-child(4) .product-card-top { background: #111008; }
+
+    .product-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .38s ease;
+    }
+    .product-card:hover::after { transform: scaleX(1); }
+
+    .product-glow {
+      position: absolute; inset: 0; opacity: 0;
+      transition: opacity .4s ease;
+      background: radial-gradient(ellipse at 50% 80%, rgba(42,157,143,.16), transparent 70%);
+    }
+    .product-card:hover .product-glow { opacity: 1; }
+
+    .product-tag {
+      position: absolute;
+      top: 12px; left: 12px;
+      background: rgba(42,157,143,.14);
+      border: 1px solid rgba(42,157,143,.28);
+      color: var(--teal);
+      font-size: .52rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 2px;
+    }
+
+    .product-img {
+      width: 80%;
+      object-fit: contain;
+      position: relative;
+      z-index: 2;
+      transition: transform .45s ease;
+      filter: drop-shadow(0 16px 32px rgba(0,0,0,.45));
+    }
+    .product-card:hover .product-img { transform: scale(1.05) translateY(-4px); }
+
+    .product-card-bottom { padding: 18px 16px 22px; border-top: 1px solid rgba(240,237,228,.06); }
+    @media (min-width: 768px) { .product-card-bottom { padding: 22px 20px 26px; } }
+    .product-name { font-size: .9rem; font-weight: 800; color: var(--cream); line-height: 1.2; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .03em; }
+    @media (min-width: 768px) { .product-name { font-size: 1rem; } }
+    .product-flavor { font-size: .65rem; font-weight: 600; color: var(--teal); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
+    .product-desc { font-size: .75rem; line-height: 1.6; color: rgba(240,237,228,.42); display: none; }
+    @media (min-width: 640px) { .product-desc { display: block; } }
+
+    /* ═══════════════════════════════════════════
+       HISTORIA
+    ═══════════════════════════════════════════ */
+    .historia { background: var(--cream); overflow: hidden; }
+
+    .historia-inner { display: flex; flex-direction: column; }
+    @media (min-width: 1024px) { .historia-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 580px; } }
+
+    .historia-img-col { position: relative; overflow: hidden; min-height: 260px; }
+    @media (min-width: 768px) { .historia-img-col { min-height: 380px; } }
+    @media (min-width: 1024px) { .historia-img-col { min-height: auto; } }
+
+    .historia-img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(20%); transition: transform .8s ease; }
+    .historia-img-col:hover .historia-img { transform: scale(1.04); }
+    .historia-img-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(42,157,143,.18), transparent 60%); }
+
+    .historia-content { padding: 48px 20px; }
+    @media (min-width: 768px) { .historia-content { padding: 60px 40px; } }
+    @media (min-width: 1024px) { .historia-content { padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; } }
+
+    .historia-content .tag { color: var(--teal-dark); }
+    .historia-title { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -.02em; color: var(--black); line-height: 1.1; margin-bottom: 22px; }
+    .historia-title em { font-style: italic; font-family: var(--font-serif); color: var(--teal-dark); }
+    .historia-body { font-size: .9rem; line-height: 1.85; color: rgba(10,10,10,.62); margin-bottom: 18px; }
+
+    .historia-highlight { margin: 26px 0; padding: 20px 24px; border-left: 3px solid var(--teal-dark); background: rgba(42,157,143,.07); }
+    .historia-highlight p { font-size: .95rem; font-style: italic; font-family: var(--font-serif); color: var(--black); line-height: 1.7; }
+
+    .historia-origin { display: flex; align-items: center; gap: 10px; }
+    .historia-origin i { color: var(--teal-dark); font-size: 1.1rem; }
+    .historia-origin-text { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(10,10,10,.55); }
+
+    /* ═══════════════════════════════════════════
+       FEATURE
+    ═══════════════════════════════════════════ */
+    .feature { background: var(--black); padding: 64px 0; position: relative; overflow: hidden; }
+    @media (min-width: 768px) { .feature { padding: 80px 0; } }
+    @media (min-width: 1024px) { .feature { padding: 110px 0; } }
+
+    .feature::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 100% at 100% 50%, rgba(42,157,143,.07), transparent);
+    }
+
+    .feature-inner { position: relative; z-index: 1; }
+    @media (min-width: 1024px) { .feature-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: center; } }
+
+    .feature-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 1024px) { .feature-visual { margin-bottom: 0; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; } }
+
+    .feature-img-wide {
+      overflow: hidden;
+      background: #111;
+    }
+    @media (min-width: 1024px) { .feature-img-wide { grid-column: 1 / -1; } }
+    .feature-img-wide img { width: 100%; object-fit: cover; transition: transform .6s; }
+    .feature-img-wide:hover img { transform: scale(1.05); }
+
+    .feature-img-single {
+      aspect-ratio: 1;
+      display: flex; align-items: center; justify-content: center;
+      padding: 14px;
+      background: #111;
+    }
+    .feature-img-single img {
+      width: 85%;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.45));
+    }
+
+    .feature-content .tag { color: var(--teal); }
+    .feature-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; letter-spacing: -.02em; color: var(--cream); line-height: 1.05; margin-bottom: 20px; }
+    .feature-title span { color: var(--teal); }
+    .feature-body { font-size: .88rem; line-height: 1.85; color: rgba(240,237,228,.52); margin-bottom: 16px; }
+
+    .feature-list { margin: 28px 0; display: flex; flex-direction: column; gap: 14px; }
+    .feature-list-item { display: flex; align-items: flex-start; gap: 12px; }
+    .feature-list-icon {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: rgba(42,157,143,.13);
+      border: 1px solid rgba(42,157,143,.28);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .feature-list-icon i { font-size: .5rem; color: var(--teal); }
+    .feature-list-text { font-size: .84rem; line-height: 1.6; color: rgba(240,237,228,.55); }
+    .feature-list-text strong { color: var(--cream); font-weight: 600; }
+
+    /* ═══════════════════════════════════════════
+       GALERÍA
+    ═══════════════════════════════════════════ */
+    .galeria { background: #080808; padding: 64px 0; }
+    @media (min-width: 768px) { .galeria { padding: 80px 0; } }
+    @media (min-width: 1024px) { .galeria { padding: 110px 0; } }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+    }
+    @media (min-width: 768px) { .galeria-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 1024px) {
+      .galeria-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+      }
+      .galeria-item:first-child { grid-column: 1 / 3; grid-row: 1 / 3; }
+    }
+
+    .galeria-item {
+      overflow: hidden;
+      background: #111;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .galeria-img-pack {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+    }
+    .galeria-item:first-child .galeria-img-pack { aspect-ratio: auto; min-height: 220px; }
+    @media (min-width: 1024px) { .galeria-item:first-child .galeria-img-pack { min-height: auto; } }
+
+    .galeria-img-pack img {
+      width: 85%;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,.4));
+      transition: transform .5s ease;
+    }
+    .galeria-item:hover .galeria-img-pack img { transform: scale(1.06); }
+
+    .galeria-overlay {
+      position: absolute; inset: 0;
+      background: rgba(10,10,10,0);
+      transition: background .3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .galeria-item:hover .galeria-overlay { background: rgba(10,10,10,.38); }
+    .galeria-overlay-icon {
+      opacity: 0;
+      transform: scale(.7);
+      transition: all .28s;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(42,157,143,.9);
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: .9rem;
+    }
+    .galeria-item:hover .galeria-overlay-icon { opacity: 1; transform: scale(1); }
+
+    /* ═══════════════════════════════════════════
+       LIGHTBOX
+    ═══════════════════════════════════════════ */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: rgba(5,5,5,.95);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease;
+    }
+    .lightbox.open { opacity: 1; pointer-events: all; }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 20px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(240,237,228,.1);
+      border: 1px solid rgba(240,237,228,.2);
+      color: var(--cream);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .2s;
+    }
+    .lightbox-close:hover { background: rgba(42,157,143,.25); border-color: var(--teal); color: var(--teal); }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 2px;
+      box-shadow: 0 40px 100px rgba(0,0,0,.8);
+      transform: scale(.94);
+      transition: transform .3s ease;
+    }
+    .lightbox.open .lightbox-img { transform: scale(1); }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%; transform: translateY(-50%);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(240,237,228,.1);
+      border: 1px solid rgba(240,237,228,.18);
+      color: var(--cream);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem;
+      transition: all .2s;
+    }
+    .lightbox-nav:hover { background: var(--teal); border-color: var(--teal); color: var(--black); }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+    @media (min-width: 768px) { .lightbox-prev { left: 28px; } .lightbox-next { right: 28px; } }
+
+    .lightbox-counter {
+      position: absolute;
+      bottom: 20px; left: 50%; transform: translateX(-50%);
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .2em;
+      color: rgba(240,237,228,.4);
+    }
+
+    /* ═══════════════════════════════════════════
+       CONTACTO
+    ═══════════════════════════════════════════ */
+    .contacto { background: var(--cream); padding: 64px 0; position: relative; overflow: hidden; }
+    @media (min-width: 768px) { .contacto { padding: 80px 0; } }
+    @media (min-width: 1024px) { .contacto { padding: 110px 0; } }
+
+    .contacto::after {
+      content: 'LEGADO';
+      position: absolute;
+      bottom: -50px; left: -10px;
+      font-size: 28vw;
+      font-weight: 900;
+      color: rgba(10,10,10,.035);
+      letter-spacing: -.05em;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .contacto-inner { position: relative; z-index: 1; }
+    .contacto-title {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--black);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .contacto-title span { color: var(--teal-dark); }
+
+    .contacto-top { margin-bottom: 44px; }
+    @media (min-width: 768px) {
+      .contacto-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
+    }
+    .contacto-sub { font-size: .86rem; line-height: 1.7; color: rgba(10,10,10,.52); max-width: 340px; margin-top: 12px; }
+    @media (min-width: 768px) { .contacto-sub { text-align: right; margin-top: 0; } }
+
+    .contacto-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+    @media (min-width: 1024px) { .contacto-cards { grid-template-columns: repeat(4, 1fr); } }
+
+    .contacto-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 24px 20px;
+      background: var(--black);
+      color: var(--cream);
+      transition: all .28s ease;
+      border-bottom: 2px solid transparent;
+    }
+    @media (min-width: 768px) { .contacto-card { padding: 30px 26px; } }
+    .contacto-card:hover { background: #161616; border-bottom-color: var(--teal); transform: translateY(-4px); }
+
+    .contacto-card-icon {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(42,157,143,.3);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal); font-size: .95rem;
+      transition: all .25s;
+    }
+    .contacto-card:hover .contacto-card-icon { background: var(--teal); color: var(--black); border-color: var(--teal); }
+
+    .contacto-card-label { font-size: .58rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: rgba(240,237,228,.38); }
+    .contacto-card-value { font-size: .8rem; font-weight: 600; color: var(--cream); line-height: 1.4; }
+    @media (min-width: 768px) { .contacto-card-value { font-size: .88rem; } }
+
+    /* ═══════════════════════════════════════════
+       CTA FINAL
+    ═══════════════════════════════════════════ */
+    .cta-final { background: var(--teal); padding: 70px 0; text-align: center; position: relative; overflow: hidden; }
+    .cta-final::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 100% at 50% 0%, rgba(255,255,255,.1), transparent),
+                  radial-gradient(ellipse 50% 80% at 50% 100%, rgba(0,0,0,.12), transparent);
+    }
+    .cta-final-inner { position: relative; z-index: 1; }
+    .cta-final-label { font-size: .62rem; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: rgba(10,10,10,.55); margin-bottom: 14px; }
+    .cta-final-title {
+      font-size: clamp(1.8rem, 5vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -.02em;
+      color: var(--black);
+      line-height: 1.05;
+      margin-bottom: 32px;
+    }
+    .cta-final-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    .footer { background: #050505; padding: 52px 0 36px; border-top: 1px solid rgba(240,237,228,.05); }
+
+    .footer-inner { margin-bottom: 44px; }
+    @media (min-width: 640px) { .footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; } }
+    @media (min-width: 1024px) { .footer-inner { grid-template-columns: 1.5fr 1fr 1fr; gap: 60px; } }
+
+    .footer-brand { margin-bottom: 32px; }
+    @media (min-width: 640px) { .footer-brand { margin-bottom: 0; grid-column: 1 / -1; } }
+    @media (min-width: 1024px) { .footer-brand { grid-column: auto; } }
+
+    .footer-brand-name { font-size: 1.3rem; font-weight: 900; letter-spacing: .06em; color: var(--cream); margin-bottom: 10px; }
+    .footer-brand-name span { color: var(--teal); }
+    .footer-brand-tagline { font-size: .78rem; color: rgba(240,237,228,.38); line-height: 1.6; max-width: 260px; margin-bottom: 20px; }
+
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social-link {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(240,237,228,.14);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(240,237,228,.45); font-size: .76rem;
+      transition: all .2s;
+    }
+    .footer-social-link:hover { border-color: var(--teal); color: var(--teal); }
+
+    .footer-col-title { font-size: .6rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: rgba(240,237,228,.28); margin-bottom: 16px; }
+    .footer-links { display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { font-size: .8rem; color: rgba(240,237,228,.48); transition: color .2s; }
+    .footer-links a:hover { color: var(--teal); }
+
+    .footer-bottom {
+      padding-top: 28px;
+      border-top: 1px solid rgba(240,237,228,.06);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    @media (min-width: 640px) { .footer-bottom { flex-direction: row; align-items: center; justify-content: space-between; } }
+    .footer-copy { font-size: .7rem; color: rgba(240,237,228,.22); }
+    .footer-origin { display: flex; align-items: center; gap: 7px; font-size: .7rem; color: rgba(240,237,228,.22); }
+    .footer-origin i { color: var(--teal); }
+    .footer-credit { font-size: .68rem; color: rgba(240,237,228,.18); margin-top: 10px; }
+    @media (min-width: 640px) { .footer-credit { margin-top: 0; } }
+    .footer-credit a { color: rgba(42,157,143,.55); text-decoration: none; transition: color .2s; }
+    .footer-credit a:hover { color: var(--teal); }
+
+    /* ═══════════════════════════════════════════
+       SCROLL REVEAL
+    ═══════════════════════════════════════════ */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <header class="hero">
-      <h1 class="brand-name">LEGADO 48°</h1>
-      <p class="coming-soon">PRÓXIMAMENTE</p>
-    </header>
 
-    <section class="contact-section">
-      <a href="https://www.facebook.com/LEGADO48/" class="contact-card" target="_blank" rel="noopener noreferrer">
-        <div class="icon-container">
-          <i class="fa-brands fa-facebook"></i>
-        </div>
-        <div class="text-container">
-          <p class="value">@LEGADO48</p>
-        </div>
-      </a>
+  <!-- ═══ LIGHTBOX ═══ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" id="lbClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <img loading="lazy" class="lightbox-img" id="lbImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    <span class="lightbox-counter" id="lbCounter"></span>
+  </div>
 
-      <a href="https://www.instagram.com/legado_48" class="contact-card" target="_blank" rel="noopener noreferrer">
-        <div class="icon-container">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="text-container">
-          <p class="value">@legado_48</p>
-        </div>
-      </a>
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#productos" data-i18n="nav.products">Productos</a>
+    <a href="#historia" data-i18n="nav.about">Nosotros</a>
+    <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+  </div>
 
-      <a href="mailto:ventaslegado48@gmail.com" class="contact-card">
-        <div class="icon-container">
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="text-container">
-          <p class="value">ventaslegado48@gmail.com</p>
-        </div>
-      </a>
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="mainNav">
+    <a href="#" class="nav-logo">LEGADO <span>48°</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#productos" data-i18n="nav.products">Productos</a></li>
+        <li><a href="#historia" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-toggle" role="group" aria-label="Idioma">
+        <button class="lang-btn active" id="btnEs" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Contáctanos</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-      <a href="tel:+529514772122" class="contact-card">
-        <div class="icon-container">
-          <i class="fa-solid fa-phone"></i>
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text" data-i18n="hero.eyebrow">Hecho en Oaxaca, México</span>
         </div>
-        <div class="text-container">
-          <p class="value">951 477 2122</p>
+        <h1 class="hero-title">LEGADO<br><span class="hero-title-deg">48°</span></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">El sabor que se hereda</p>
+        <p class="hero-desc" data-i18n="hero.desc">Gomitas de Mezcal y Chocolates con Mezcal elaborados artesanalmente con los sabores más auténticos de Oaxaca. Una experiencia para los amantes del mezcal.</p>
+
+        <!-- Mobile product strip -->
+        <div class="hero-product-strip">
+          <picture><source srcset="assets/images/gomitas-sal-de-gusano.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-sal-de-gusano.png" alt="Sal de Gusano"></picture>
+          <picture><source srcset="assets/images/gomitas-tepextate.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-tepextate.png" alt="Tepextate"></picture>
+          <picture><source srcset="assets/images/gomitas-maracuya.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-maracuya.png" alt="Maracuyá"></picture>
         </div>
-      </a>
-    </section>
-  </main>
+
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-teal">
+            <span data-i18n="hero.cta1">Ver productos</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#historia" class="btn btn-outline" data-i18n="hero.cta2">Nuestra historia</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <div class="hero-badge-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="hero-badge-text">
+              <strong data-i18n="hero.badge1.title">100% Artesanal</strong>
+              <span data-i18n="hero.badge1.sub">Agave oaxaqueño</span>
+            </div>
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="hero-badge-text">
+              <strong data-i18n="hero.badge2.title">Hecho en México</strong>
+              <span data-i18n="hero.badge2.sub">Oaxaca, tierra de mezcal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop visual -->
+      <div class="hero-visual">
+        <div class="hero-ring"></div>
+        <div class="hero-ring"></div>
+        <picture><source srcset="assets/images/gomitas-trio-b.webp" type="image/webp"><img fetchpriority="high" class="hero-products-img" src="assets/images/gomitas-trio-b.png" alt="Gomitas de Mezcal LEGADO 48° — colección"></picture>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-text">Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner" id="tickerInner">
+      <span class="ticker-item" data-i18n="ticker.item1">Gomitas de Mezcal <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item2">Chocolates con Mezcal <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item3">Sal de Gusano <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item4">Tepextate <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item5">Maracuyá <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item6">Hecho en Oaxaca <span class="ticker-dot"></span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item" data-i18n="ticker.item1">Gomitas de Mezcal <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item2">Chocolates con Mezcal <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item3">Sal de Gusano <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item4">Tepextate <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item5">Maracuyá <span class="ticker-dot"></span></span>
+      <span class="ticker-item" data-i18n="ticker.item6">Hecho en Oaxaca <span class="ticker-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ═══ MANIFESTO ═══ -->
+  <section class="manifesto">
+    <div class="container">
+      <div class="manifesto-inner">
+        <div class="manifesto-left reveal">
+          <div class="tag" data-i18n="manifesto.tag">Nuestra filosofía</div>
+          <h2 class="manifesto-headline" data-i18n-html="manifesto.headline">Tradición oaxaqueña<br>en cada <em>bocado</em></h2>
+          <div class="manifesto-stats">
+            <div class="stat"><div class="stat-number">100%</div><div class="stat-label" data-i18n="stat1.label">Artesanal</div></div>
+            <div class="stat"><div class="stat-number">4</div><div class="stat-label" data-i18n="stat2.label">Sabores únicos</div></div>
+            <div class="stat"><div class="stat-number">48°</div><div class="stat-label" data-i18n="stat3.label">Temperatura del alma</div></div>
+          </div>
+        </div>
+        <div class="manifesto-right reveal">
+          <p data-i18n="manifesto.p1">En LEGADO 48° creemos que la cultura oaxaqueña merece vivirse de maneras nuevas. Tomamos la riqueza del mezcal artesanal y la transformamos en experiencias que se pueden saborear, compartir y recordar.</p>
+          <p data-i18n="manifesto.p2">Nuestros productos son el resultado de combinar técnicas modernas con ingredientes auténticos: el mezcal de agave silvestre, la sal de gusano tradicional, el tepextate y los sabores tropicales que definen la tierra oaxaqueña.</p>
+          <p data-i18n="manifesto.p3">Cada bolsa lleva el legado de una región extraordinaria. Cada bocado, una historia de 48 grados de pasión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRODUCTOS ═══ -->
+  <section class="productos" id="productos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <div class="tag" data-i18n="productos.tag">Lo que ofrecemos</div>
+          <h2 class="section-title"><span data-i18n="productos.title.line1">Nuestros</span><br><span data-i18n="productos.title.accent">productos</span></h2>
+        </div>
+        <p class="section-desc" data-i18n="productos.desc">Cuatro experiencias únicas que celebran los sabores más auténticos de Oaxaca, infusionados con el alma del mezcal.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-glow"></div>
+            <span class="product-tag" data-i18n="prod1.tag">Nuevo</span>
+            <picture><source srcset="assets/images/chocolates-con-mezcal.webp" type="image/webp"><img loading="lazy" class="product-img" src="assets/images/chocolates-con-mezcal.png" alt="Chocolates con Mezcal"></picture>
+          </div>
+          <div class="product-card-bottom">
+            <p class="product-flavor" data-i18n="prod1.flavor">Chocolates</p>
+            <h3 class="product-name" data-i18n="prod1.name">Con Mezcal</h3>
+            <p class="product-desc" data-i18n="prod1.desc">Chocolates finos elaborados con cacao de calidad e infusionados con la calidez y carácter del mezcal oaxaqueño.</p>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-glow"></div>
+            <span class="product-tag" data-i18n="prod2.tag">Clásico</span>
+            <picture><source srcset="assets/images/gomitas-sal-de-gusano.webp" type="image/webp"><img loading="lazy" class="product-img" src="assets/images/gomitas-sal-de-gusano.png" alt="Gomitas de Mezcal Sal de Gusano"></picture>
+          </div>
+          <div class="product-card-bottom">
+            <p class="product-flavor" data-i18n="prod2.flavor">Gomitas de Mezcal</p>
+            <h3 class="product-name" data-i18n="prod2.name">Sal de Gusano</h3>
+            <p class="product-desc" data-i18n="prod2.desc">La combinación perfecta de dulce y tradición. Gomitas de mezcal con la icónica sal de gusano de Oaxaca.</p>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-glow"></div>
+            <span class="product-tag" data-i18n="prod3.tag">Artesanal</span>
+            <picture><source srcset="assets/images/gomitas-tepextate.webp" type="image/webp"><img loading="lazy" class="product-img" src="assets/images/gomitas-tepextate.png" alt="Gomitas de Mezcal Tepextate"></picture>
+          </div>
+          <div class="product-card-bottom">
+            <p class="product-flavor" data-i18n="prod3.flavor">Gomitas de Mezcal</p>
+            <h3 class="product-name" data-i18n="prod3.name">Tepextate</h3>
+            <p class="product-desc" data-i18n="prod3.desc">Inspiradas en el agave silvestre Tepextate, con un perfil herbáceo y complejo que distingue a los mezcales más especiales.</p>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-card-top">
+            <div class="product-glow"></div>
+            <span class="product-tag" data-i18n="prod4.tag">Tropical</span>
+            <picture><source srcset="assets/images/gomitas-maracuya.webp" type="image/webp"><img loading="lazy" class="product-img" src="assets/images/gomitas-maracuya.png" alt="Gomitas de Mezcal Maracuyá"></picture>
+          </div>
+          <div class="product-card-bottom">
+            <p class="product-flavor" data-i18n="prod4.flavor">Gomitas de Mezcal</p>
+            <h3 class="product-name" data-i18n="prod4.name">Maracuyá</h3>
+            <p class="product-desc" data-i18n="prod4.desc">El contraste perfecto: la acidez tropical del maracuyá con el carácter ahumado y profundo del mezcal oaxaqueño.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HISTORIA ═══ -->
+  <section class="historia" id="historia">
+    <div class="historia-inner">
+      <div class="historia-img-col">
+        <picture><source srcset="assets/images/gomitas-trio-a.webp" type="image/webp"><img fetchpriority="high" class="historia-img" src="assets/images/gomitas-trio-a.png" alt="Colección LEGADO 48°"></picture>
+        <div class="historia-img-overlay"></div>
+      </div>
+      <div class="historia-content reveal">
+        <div class="tag" data-i18n="historia.tag">Nuestra historia</div>
+        <h2 class="historia-title" data-i18n-html="historia.title">Un legado de<br><em>48 grados</em></h2>
+        <p class="historia-body" data-i18n="historia.p1">LEGADO 48° nace del amor por Oaxaca y la fascinación por el mezcal. El nombre evoca los 48 grados centígrados que representan la pasión, la calidez y el fuego de una tradición que se transmite de generación en generación.</p>
+        <div class="historia-highlight">
+          <p data-i18n="historia.quote">"El mezcal no es solo una bebida, es el alma de Oaxaca. Queremos llevar ese alma a cada bocado, a cada momento compartido."</p>
+        </div>
+        <p class="historia-body" data-i18n="historia.p2">Elaboramos nuestros productos con ingredientes de origen oaxaqueño, respetando los procesos artesanales y rindiendo homenaje a los sabores que han definido esta tierra por siglos.</p>
+        <div class="historia-origin">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="historia-origin-text" data-i18n="historia.origin">Oaxaca de Juárez, México — Hecho con orgullo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURE ═══ -->
+  <section class="feature">
+    <div class="container">
+      <div class="feature-inner">
+        <div class="feature-visual reveal">
+          <div class="feature-img-wide">
+            <picture><source srcset="assets/images/gomitas-trio-b.webp" type="image/webp"><img fetchpriority="high" src="assets/images/gomitas-trio-b.png" alt="Colección Gomitas de Mezcal"></picture>
+          </div>
+          <div class="feature-img-single">
+            <picture><source srcset="assets/images/chocolates-con-mezcal.webp" type="image/webp"><img loading="lazy" src="assets/images/chocolates-con-mezcal.png" alt="Chocolates con Mezcal"></picture>
+          </div>
+          <div class="feature-img-single">
+            <picture><source srcset="assets/images/gomitas-maracuya.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-maracuya.png" alt="Gomitas Maracuyá"></picture>
+          </div>
+        </div>
+        <div class="feature-content reveal">
+          <div class="tag" data-i18n="feature.tag">Por qué elegirnos</div>
+          <h2 class="feature-title" data-i18n-html="feature.title">Calidad que<br><span>se siente</span></h2>
+          <p class="feature-body" data-i18n="feature.body">Cada producto LEGADO 48° es elaborado con una selección cuidadosa de ingredientes y un proceso artesanal que garantiza una experiencia de calidad en cada pieza.</p>
+          <ul class="feature-list">
+            <li class="feature-list-item">
+              <div class="feature-list-icon"><i class="fa-solid fa-check"></i></div>
+              <p class="feature-list-text" data-i18n-html="feature.li1"><strong>Ingredientes auténticos</strong> — Mezcal de agave oaxaqueño, sal de gusano y sabores naturales de la región.</p>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-list-icon"><i class="fa-solid fa-check"></i></div>
+              <p class="feature-list-text" data-i18n-html="feature.li2"><strong>Elaboración artesanal</strong> — Proceso cuidadoso que preserva los sabores y la esencia del mezcal.</p>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-list-icon"><i class="fa-solid fa-check"></i></div>
+              <p class="feature-list-text" data-i18n-html="feature.li3"><strong>Hecho en Oaxaca</strong> — Apoyamos a productores locales y preservamos la tradición mezcalera.</p>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-list-icon"><i class="fa-solid fa-check"></i></div>
+              <p class="feature-list-text" data-i18n-html="feature.li4"><strong>Empaque resellable</strong> — Bolsas premium reutilizables que mantienen la frescura del producto.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERÍA ═══ -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <div class="tag" data-i18n="galeria.tag">Galería</div>
+          <h2 class="section-title"><span data-i18n="galeria.title.line1">Los productos</span><br><span data-i18n="galeria.title.accent">en detalle</span></h2>
+        </div>
+        <p class="section-desc" data-i18n="galeria.desc">Cada empaque cuenta la historia de un sabor. Diseño que refleja la elegancia y la tradición de Oaxaca.</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item reveal" data-lb-src="assets/images/gomitas-trio-a.webp" data-lb-alt="Colección Gomitas de Mezcal">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/gomitas-trio-a.webp" type="image/webp"><img fetchpriority="high" src="assets/images/gomitas-trio-a.png" alt="Colección Gomitas de Mezcal"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+        <div class="galeria-item reveal" data-lb-src="assets/images/gomitas-tepextate.webp" data-lb-alt="Gomitas Tepextate">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/gomitas-tepextate.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-tepextate.png" alt="Gomitas Tepextate"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+        <div class="galeria-item reveal" data-lb-src="assets/images/chocolates-con-mezcal.webp" data-lb-alt="Chocolates con Mezcal">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/chocolates-con-mezcal.webp" type="image/webp"><img loading="lazy" src="assets/images/chocolates-con-mezcal.png" alt="Chocolates con Mezcal"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+        <div class="galeria-item reveal" data-lb-src="assets/images/gomitas-sal-de-gusano.webp" data-lb-alt="Gomitas Sal de Gusano">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/gomitas-sal-de-gusano.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-sal-de-gusano.png" alt="Gomitas Sal de Gusano"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+        <div class="galeria-item reveal" data-lb-src="assets/images/gomitas-maracuya.webp" data-lb-alt="Gomitas Maracuyá">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/gomitas-maracuya.webp" type="image/webp"><img loading="lazy" src="assets/images/gomitas-maracuya.png" alt="Gomitas Maracuyá"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+        <div class="galeria-item reveal" data-lb-src="assets/images/gomitas-trio-b.webp" data-lb-alt="Los tres sabores">
+          <div class="galeria-img-pack"><picture><source srcset="assets/images/gomitas-trio-b.webp" type="image/webp"><img fetchpriority="high" src="assets/images/gomitas-trio-b.png" alt="Los tres sabores"></picture></div>
+          <div class="galeria-overlay"><div class="galeria-overlay-icon"><i class="fa-solid fa-expand"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACTO ═══ -->
+  <section class="contacto" id="contacto">
+    <div class="container contacto-inner">
+      <div class="contacto-top reveal">
+        <div>
+          <div class="tag" style="color:var(--teal-dark)" data-i18n="contacto.tag">Encuéntranos</div>
+          <h2 class="contacto-title" data-i18n-html="contacto.title">Hablemos de<br><span>mezcal</span></h2>
+        </div>
+        <p class="contacto-sub" data-i18n="contacto.sub">Estamos listos para atender tus pedidos, resolver dudas y llevarte la experiencia LEGADO 48° hasta donde estés.</p>
+      </div>
+      <div class="contacto-cards">
+        <a href="mailto:ventaslegado48@gmail.com" class="contacto-card reveal">
+          <div class="contacto-card-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div>
+            <p class="contacto-card-label" data-i18n="contacto.email.label">Correo electrónico</p>
+            <p class="contacto-card-value">ventaslegado48@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+529514772122" class="contacto-card reveal">
+          <div class="contacto-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p class="contacto-card-label" data-i18n="contacto.phone.label">Teléfono</p>
+            <p class="contacto-card-value">951 477 2122</p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/legado_48" target="_blank" rel="noopener noreferrer" class="contacto-card reveal">
+          <div class="contacto-card-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div>
+            <p class="contacto-card-label">Instagram</p>
+            <p class="contacto-card-value">@legado_48</p>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/LEGADO48/" target="_blank" rel="noopener noreferrer" class="contacto-card reveal">
+          <div class="contacto-card-icon"><i class="fa-brands fa-facebook"></i></div>
+          <div>
+            <p class="contacto-card-label">Facebook</p>
+            <p class="contacto-card-value">@LEGADO48</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA FINAL ═══ -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <p class="cta-final-label" data-i18n="cta.label">¿Listo para probarlo?</p>
+      <h2 class="cta-final-title" data-i18n-html="cta.title">El sabor de Oaxaca,<br>en tus manos</h2>
+      <div class="cta-final-actions">
+        <a href="mailto:ventaslegado48@gmail.com" class="btn btn-dark" onclick="pedirAhora(event)">
+          <span data-i18n="cta.btn1">Hacer un pedido</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://www.instagram.com/legado_48" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-dark" data-i18n="cta.btn2">Síguenos en Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-brand-name">LEGADO <span>48°</span></p>
+          <p class="footer-brand-tagline" data-i18n="footer.tagline">Gomitas de Mezcal y Chocolates con Mezcal elaborados artesanalmente en Oaxaca, México.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/legado_48" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/LEGADO48/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:ventaslegado48@gmail.com" class="footer-social-link" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col1.title">Productos</p>
+          <ul class="footer-links">
+            <li><a href="#productos" data-i18n="footer.link.chocolates">Chocolates con Mezcal</a></li>
+            <li><a href="#productos" data-i18n="footer.link.gusano">Sal de Gusano</a></li>
+            <li><a href="#productos" data-i18n="footer.link.tepextate">Tepextate</a></li>
+            <li><a href="#productos" data-i18n="footer.link.maracuya">Maracuyá</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col2.title">Contacto</p>
+          <ul class="footer-links">
+            <li><a href="mailto:ventaslegado48@gmail.com">ventaslegado48@gmail.com</a></li>
+            <li><a href="tel:+529514772122">951 477 2122</a></li>
+            <li><a href="https://www.instagram.com/legado_48" target="_blank" rel="noopener noreferrer">@legado_48</a></li>
+            <li><a href="https://www.facebook.com/LEGADO48/" target="_blank" rel="noopener noreferrer">@LEGADO48</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer.copy">© 2026 LEGADO 48°. Todos los derechos reservados.</p>
+        <div class="footer-origin">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="footer.origin">Hecho con orgullo en Oaxaca, México</span>
+        </div>
+        <p class="footer-credit" data-i18n-html="footer.credit">Sitio web por <a href="https://www.juanvasquez.dev" target="_blank" rel="noopener noreferrer">Juan Vásquez</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  /* ═══════════════════════════════════════════
+     TRANSLATIONS
+  ═══════════════════════════════════════════ */
+  const T = {
+    es: {
+      'nav.products': 'Productos',
+      'nav.about': 'Nosotros',
+      'nav.gallery': 'Galería',
+      'nav.contact': 'Contacto',
+      'nav.cta': 'Contáctanos',
+      'hero.eyebrow': 'Hecho en Oaxaca, México',
+      'hero.subtitle': 'El sabor que se hereda',
+      'hero.desc': 'Gomitas de Mezcal y Chocolates con Mezcal elaborados artesanalmente con los sabores más auténticos de Oaxaca. Una experiencia para los amantes del mezcal.',
+      'hero.cta1': 'Ver productos',
+      'hero.cta2': 'Nuestra historia',
+      'hero.badge1.title': '100% Artesanal',
+      'hero.badge1.sub': 'Agave oaxaqueño',
+      'hero.badge2.title': 'Hecho en México',
+      'hero.badge2.sub': 'Oaxaca, tierra de mezcal',
+      'ticker.item1': 'Gomitas de Mezcal',
+      'ticker.item2': 'Chocolates con Mezcal',
+      'ticker.item3': 'Sal de Gusano',
+      'ticker.item4': 'Tepextate',
+      'ticker.item5': 'Maracuyá',
+      'ticker.item6': 'Hecho en Oaxaca',
+      'manifesto.tag': 'Nuestra filosofía',
+      'manifesto.headline': 'Tradición oaxaqueña<br>en cada <em>bocado</em>',
+      'stat1.label': 'Artesanal',
+      'stat2.label': 'Sabores únicos',
+      'stat3.label': 'Temperatura del alma',
+      'manifesto.p1': 'En LEGADO 48° creemos que la cultura oaxaqueña merece vivirse de maneras nuevas. Tomamos la riqueza del mezcal artesanal y la transformamos en experiencias que se pueden saborear, compartir y recordar.',
+      'manifesto.p2': 'Nuestros productos son el resultado de combinar técnicas modernas con ingredientes auténticos: el mezcal de agave silvestre, la sal de gusano tradicional, el tepextate y los sabores tropicales que definen la tierra oaxaqueña.',
+      'manifesto.p3': 'Cada bolsa lleva el legado de una región extraordinaria. Cada bocado, una historia de 48 grados de pasión.',
+      'productos.tag': 'Lo que ofrecemos',
+      'productos.title.line1': 'Nuestros',
+      'productos.title.accent': 'productos',
+      'productos.desc': 'Cuatro experiencias únicas que celebran los sabores más auténticos de Oaxaca, infusionados con el alma del mezcal.',
+      'prod1.tag': 'Nuevo', 'prod1.flavor': 'Chocolates', 'prod1.name': 'Con Mezcal',
+      'prod1.desc': 'Chocolates finos elaborados con cacao de calidad e infusionados con la calidez y carácter del mezcal oaxaqueño.',
+      'prod2.tag': 'Clásico', 'prod2.flavor': 'Gomitas de Mezcal', 'prod2.name': 'Sal de Gusano',
+      'prod2.desc': 'La combinación perfecta de dulce y tradición. Gomitas de mezcal con la icónica sal de gusano de Oaxaca.',
+      'prod3.tag': 'Artesanal', 'prod3.flavor': 'Gomitas de Mezcal', 'prod3.name': 'Tepextate',
+      'prod3.desc': 'Inspiradas en el agave silvestre Tepextate, con un perfil herbáceo y complejo que distingue a los mezcales más especiales.',
+      'prod4.tag': 'Tropical', 'prod4.flavor': 'Gomitas de Mezcal', 'prod4.name': 'Maracuyá',
+      'prod4.desc': 'El contraste perfecto: la acidez tropical del maracuyá con el carácter ahumado y profundo del mezcal oaxaqueño.',
+      'historia.tag': 'Nuestra historia',
+      'historia.title': 'Un legado de<br><em>48 grados</em>',
+      'historia.p1': 'LEGADO 48° nace del amor por Oaxaca y la fascinación por el mezcal. El nombre evoca los 48 grados centígrados que representan la pasión, la calidez y el fuego de una tradición que se transmite de generación en generación.',
+      'historia.quote': '"El mezcal no es solo una bebida, es el alma de Oaxaca. Queremos llevar ese alma a cada bocado, a cada momento compartido."',
+      'historia.p2': 'Elaboramos nuestros productos con ingredientes de origen oaxaqueño, respetando los procesos artesanales y rindiendo homenaje a los sabores que han definido esta tierra por siglos.',
+      'historia.origin': 'Oaxaca de Juárez, México — Hecho con orgullo',
+      'feature.tag': 'Por qué elegirnos',
+      'feature.title': 'Calidad que<br><span>se siente</span>',
+      'feature.body': 'Cada producto LEGADO 48° es elaborado con una selección cuidadosa de ingredientes y un proceso artesanal que garantiza una experiencia de calidad en cada pieza.',
+      'feature.li1': '<strong>Ingredientes auténticos</strong> — Mezcal de agave oaxaqueño, sal de gusano y sabores naturales de la región.',
+      'feature.li2': '<strong>Elaboración artesanal</strong> — Proceso cuidadoso que preserva los sabores y la esencia del mezcal.',
+      'feature.li3': '<strong>Hecho en Oaxaca</strong> — Apoyamos a productores locales y preservamos la tradición mezcalera.',
+      'feature.li4': '<strong>Empaque resellable</strong> — Bolsas premium reutilizables que mantienen la frescura del producto.',
+      'galeria.tag': 'Galería',
+      'galeria.title.line1': 'Los productos',
+      'galeria.title.accent': 'en detalle',
+      'galeria.desc': 'Cada empaque cuenta la historia de un sabor. Diseño que refleja la elegancia y la tradición de Oaxaca.',
+      'contacto.tag': 'Encuéntranos',
+      'contacto.title': 'Hablemos de<br><span>mezcal</span>',
+      'contacto.sub': 'Estamos listos para atender tus pedidos, resolver dudas y llevarte la experiencia LEGADO 48° hasta donde estés.',
+      'contacto.email.label': 'Correo electrónico',
+      'contacto.phone.label': 'Teléfono',
+      'cta.label': '¿Listo para probarlo?',
+      'cta.title': 'El sabor de Oaxaca,<br>en tus manos',
+      'cta.btn1': 'Hacer un pedido',
+      'cta.btn2': 'Síguenos en Instagram',
+      'footer.tagline': 'Gomitas de Mezcal y Chocolates con Mezcal elaborados artesanalmente en Oaxaca, México.',
+      'footer.col1.title': 'Productos',
+      'footer.col2.title': 'Contacto',
+      'footer.link.chocolates': 'Chocolates con Mezcal',
+      'footer.link.gusano': 'Sal de Gusano',
+      'footer.link.tepextate': 'Tepextate',
+      'footer.link.maracuya': 'Maracuyá',
+      'footer.copy': '© 2026 LEGADO 48°. Todos los derechos reservados.',
+      'footer.origin': 'Hecho con orgullo en Oaxaca, México',
+      'footer.credit': 'Sitio web por <a href="https://www.juanvasquez.dev" target="_blank" rel="noopener noreferrer">Juan Vásquez</a>',
+    },
+    en: {
+      'nav.products': 'Products',
+      'nav.about': 'About',
+      'nav.gallery': 'Gallery',
+      'nav.contact': 'Contact',
+      'nav.cta': 'Contact Us',
+      'hero.eyebrow': 'Made in Oaxaca, Mexico',
+      'hero.subtitle': 'The flavor that endures',
+      'hero.desc': 'Mezcal Gummies and Mezcal Chocolates handcrafted with the most authentic flavors of Oaxaca. An experience for mezcal lovers.',
+      'hero.cta1': 'See products',
+      'hero.cta2': 'Our story',
+      'hero.badge1.title': '100% Artisanal',
+      'hero.badge1.sub': 'Oaxacan agave',
+      'hero.badge2.title': 'Made in Mexico',
+      'hero.badge2.sub': 'Oaxaca, land of mezcal',
+      'ticker.item1': 'Mezcal Gummies',
+      'ticker.item2': 'Mezcal Chocolates',
+      'ticker.item3': 'Worm Salt',
+      'ticker.item4': 'Tepextate',
+      'ticker.item5': 'Passion Fruit',
+      'ticker.item6': 'Made in Oaxaca',
+      'manifesto.tag': 'Our philosophy',
+      'manifesto.headline': 'Oaxacan tradition<br>in every <em>bite</em>',
+      'stat1.label': 'Artisanal',
+      'stat2.label': 'Unique flavors',
+      'stat3.label': 'Temperature of the soul',
+      'manifesto.p1': 'At LEGADO 48° we believe Oaxacan culture deserves to be experienced in new ways. We take the richness of artisanal mezcal and transform it into experiences to be savored, shared, and remembered.',
+      'manifesto.p2': 'Our products are the result of combining modern techniques with authentic ingredients: wild agave mezcal, traditional worm salt, tepextate and the tropical flavors that define Oaxacan land.',
+      'manifesto.p3': 'Each bag carries the legacy of an extraordinary region. Each bite, a story of 48 degrees of passion.',
+      'productos.tag': 'What we offer',
+      'productos.title.line1': 'Our',
+      'productos.title.accent': 'products',
+      'productos.desc': 'Four unique experiences celebrating the most authentic flavors of Oaxaca, infused with the soul of mezcal.',
+      'prod1.tag': 'New', 'prod1.flavor': 'Chocolates', 'prod1.name': 'With Mezcal',
+      'prod1.desc': 'Fine chocolates crafted with quality cacao and infused with the warmth and character of Oaxacan mezcal.',
+      'prod2.tag': 'Classic', 'prod2.flavor': 'Mezcal Gummies', 'prod2.name': 'Worm Salt',
+      'prod2.desc': 'The perfect combination of sweet and tradition. Mezcal gummies with the iconic worm salt from Oaxaca.',
+      'prod3.tag': 'Artisanal', 'prod3.flavor': 'Mezcal Gummies', 'prod3.name': 'Tepextate',
+      'prod3.desc': 'Inspired by the wild Tepextate agave, with a herbal and complex profile that distinguishes the most special mezcals.',
+      'prod4.tag': 'Tropical', 'prod4.flavor': 'Mezcal Gummies', 'prod4.name': 'Passion Fruit',
+      'prod4.desc': 'The perfect contrast: the tropical acidity of passion fruit with the smoky, deep character of Oaxacan mezcal.',
+      'historia.tag': 'Our story',
+      'historia.title': 'A legacy of<br><em>48 degrees</em>',
+      'historia.p1': 'LEGADO 48° was born from a love of Oaxaca and a fascination with mezcal. The name evokes 48 degrees Celsius, representing the passion, warmth, and fire of a tradition passed down through generations.',
+      'historia.quote': '"Mezcal is not just a drink, it is the soul of Oaxaca. We want to bring that soul into every bite, every shared moment."',
+      'historia.p2': 'We craft our products with Oaxacan ingredients, respecting artisanal processes and paying tribute to the flavors that have defined this land for centuries.',
+      'historia.origin': 'Oaxaca de Juárez, Mexico — Made with pride',
+      'feature.tag': 'Why choose us',
+      'feature.title': 'Quality you<br><span>can feel</span>',
+      'feature.body': 'Every LEGADO 48° product is crafted with carefully selected ingredients and an artisanal process that ensures a quality experience in every piece.',
+      'feature.li1': '<strong>Authentic ingredients</strong> — Oaxacan agave mezcal, worm salt, and natural flavors from the region.',
+      'feature.li2': '<strong>Artisanal crafting</strong> — A careful process that preserves the flavors and essence of mezcal.',
+      'feature.li3': '<strong>Made in Oaxaca</strong> — We support local producers and preserve mezcal traditions.',
+      'feature.li4': '<strong>Resealable packaging</strong> — Premium reusable bags that keep the product fresh.',
+      'galeria.tag': 'Gallery',
+      'galeria.title.line1': 'The products',
+      'galeria.title.accent': 'in detail',
+      'galeria.desc': 'Each package tells the story of a flavor. Design that reflects the elegance and tradition of Oaxaca.',
+      'contacto.tag': 'Find us',
+      'contacto.title': "Let's talk<br><span>mezcal</span>",
+      'contacto.sub': 'We are ready to take your orders, answer questions, and bring the LEGADO 48° experience to wherever you are.',
+      'contacto.email.label': 'Email',
+      'contacto.phone.label': 'Phone',
+      'cta.label': 'Ready to try it?',
+      'cta.title': 'The taste of Oaxaca,<br>in your hands',
+      'cta.btn1': 'Place an order',
+      'cta.btn2': 'Follow us on Instagram',
+      'footer.tagline': 'Mezcal Gummies and Mezcal Chocolates handcrafted in Oaxaca, Mexico.',
+      'footer.col1.title': 'Products',
+      'footer.col2.title': 'Contact',
+      'footer.link.chocolates': 'Mezcal Chocolates',
+      'footer.link.gusano': 'Worm Salt',
+      'footer.link.tepextate': 'Tepextate',
+      'footer.link.maracuya': 'Passion Fruit',
+      'footer.copy': '© 2026 LEGADO 48°. All rights reserved.',
+      'footer.origin': 'Made with pride in Oaxaca, Mexico',
+      'footer.credit': 'Website by <a href="https://www.juanvasquez.dev" target="_blank" rel="noopener noreferrer">Juan Vásquez</a>',
+    }
+  };
+
+  /* ═══════════════════════════════════════════
+     ORDER EMAIL — pre-filled mailto
+  ═══════════════════════════════════════════ */
+  const ORDER_EMAIL = {
+    es: {
+      subject: 'Pedido LEGADO 48°',
+      body:
+`Hola, me interesa hacer un pedido.
+
+Nombre:
+Teléfono:
+
+¿Qué productos te interesan?
+☐ Chocolates con Mezcal
+☐ Gomitas de Mezcal — Sal de Gusano
+☐ Gomitas de Mezcal — Tepextate
+☐ Gomitas de Mezcal — Maracuyá
+
+Cantidad aproximada:
+Comentarios adicionales: `
+    },
+    en: {
+      subject: 'Order LEGADO 48°',
+      body:
+`Hi, I'd like to place an order.
+
+Name:
+Phone:
+
+Products of interest:
+☐ Mezcal Chocolates
+☐ Mezcal Gummies — Worm Salt
+☐ Mezcal Gummies — Tepextate
+☐ Mezcal Gummies — Passion Fruit
+
+Approximate quantity:
+Additional comments: `
+    }
+  };
+
+  function pedirAhora(e) {
+    e.preventDefault();
+    const d = ORDER_EMAIL[currentLang];
+    window.location.href =
+      'mailto:ventaslegado48@gmail.com' +
+      '?subject=' + encodeURIComponent(d.subject) +
+      '&body=' + encodeURIComponent(d.body);
+  }
+
+  let currentLang = 'es';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.getElementById('btnEs').classList.toggle('active', lang === 'es');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+
+    // Update text content
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (T[lang][key] !== undefined) el.textContent = T[lang][key];
+    });
+
+    // Update innerHTML (for tags with <br>, <em>, <span>)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+    });
+
+    // Update html lang attribute for meta
+    document.querySelector('meta[name="description"]').content =
+      lang === 'es'
+        ? 'LEGADO 48° — Gomitas de Mezcal y Chocolates con Mezcal. Hecho en Oaxaca, México.'
+        : 'LEGADO 48° — Mezcal Gummies and Mezcal Chocolates. Made in Oaxaca, Mexico.';
+    document.title = lang === 'es' ? 'LEGADO 48° | Hecho en Oaxaca' : 'LEGADO 48° | Made in Oaxaca';
+  }
+
+  /* ═══════════════════════════════════════════
+     NAV SCROLL + HAMBURGER
+  ═══════════════════════════════════════════ */
+  const nav = document.getElementById('mainNav');
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      document.body.style.overflow = '';
+    });
+  });
+
+  /* ═══════════════════════════════════════════
+     LIGHTBOX
+  ═══════════════════════════════════════════ */
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+  const lbCounter = document.getElementById('lbCounter');
+
+  const galleryItems = Array.from(document.querySelectorAll('.galeria-item[data-lb-src]'));
+  let lbIndex = 0;
+
+  function openLightbox(index) {
+    lbIndex = index;
+    const item = galleryItems[index];
+    lbImg.src = item.getAttribute('data-lb-src');
+    lbImg.alt = item.getAttribute('data-lb-alt') || '';
+    lbCounter.textContent = `${index + 1} / ${galleryItems.length}`;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function lbNavigate(dir) {
+    lbIndex = (lbIndex + dir + galleryItems.length) % galleryItems.length;
+    openLightbox(lbIndex);
+  }
+
+  galleryItems.forEach((item, i) => {
+    item.addEventListener('click', () => openLightbox(i));
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', e => { e.stopPropagation(); lbNavigate(-1); });
+  lbNext.addEventListener('click', e => { e.stopPropagation(); lbNavigate(1); });
+
+  lb.addEventListener('click', e => {
+    if (e.target === lb) closeLightbox();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lbNavigate(-1);
+    if (e.key === 'ArrowRight') lbNavigate(1);
+  });
+
+  /* ═══════════════════════════════════════════
+     SCROLL REVEAL
+  ═══════════════════════════════════════════ */
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
 </body>
 </html>
