@@ -330,6 +330,12 @@ entries.forEach((entry, i) => {
 
   document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
+/* ── Logo → scroll to top ── */
+document.querySelector('.nav-logo')?.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 /* ── Service Worker registration ── */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
