@@ -35,5 +35,21 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "LEGADO 48° — Gomitas de Mezcal y Chocolates"
+    },
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "LEGADO 48° — Gomitas de Mezcal y Chocolates"
+    }
   ]
 }

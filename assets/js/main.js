@@ -336,10 +336,19 @@ document.querySelector('.nav-logo')?.addEventListener('click', e => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* ── Service Worker registration ── */
+/* ── Service Worker registration (production only) ── */
+const IS_LOCAL = ['localhost', '127.0.0.1'].includes(location.hostname);
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .catch(err => console.warn('SW registration failed:', err));
-  });
+  if (IS_LOCAL) {
+    // Unregister any existing SW and clear all caches on localhost
+    navigator.serviceWorker.getRegistrations()
+      .then(regs => regs.forEach(r => r.unregister()));
+    caches.keys()
+      .then(keys => keys.forEach(k => caches.delete(k)));
+  } else {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(err => console.warn('SW registration failed:', err));
+    });
+  }
 }
