@@ -17,7 +17,8 @@ Official website for **LEGADO 48°**, an artisanal mezcal brand from Oaxaca, Mé
 - **Pre-filled order email** — mailto with structured form body, language-aware
 - **Scroll reveal animations** — IntersectionObserver-based, no library dependency
 - **SEO-ready** — JSON-LD structured data, canonical tag, OG social preview image, sitemap, robots.txt
-- **Vercel-configured** — cache headers for assets (1 year immutable), no-cache for HTML
+- **PWA-ready** — Web App Manifest, service worker (cache-first assets, offline fallback), installable on Android/iOS
+- **Vercel-configured** — cache headers for assets (1 year immutable), no-cache for HTML, SW, and manifest
 
 ---
 
@@ -36,14 +37,19 @@ Pure HTML + CSS + vanilla JS. No build step, no framework, no dependencies beyon
 ```
 legado48/
 ├── assets/
+│   ├── css/main.css         # All styles (cached 1yr by Vercel CDN)
+│   ├── js/main.js           # All scripts, defer (cached 1yr by Vercel CDN)
+│   ├── icons/               # PWA app icons — 192/512 standard + maskable
 │   └── images/              # Optimized WebP + PNG product images & OG preview
 ├── docs/                    # Brand documentation (not deployed to Vercel)
-├── index.html               # Main page — all HTML, CSS, and JS in one file
+├── index.html               # Main page — HTML only, links CSS/JS externally
+├── manifest.json            # PWA Web App Manifest
+├── sw.js                    # Service Worker — cache-first assets, offline fallback
 ├── favicon.svg
 ├── robots.txt
 ├── sitemap.xml
 ├── vercel.json              # Cache headers and security headers
-├── .vercelignore            # Excludes docs/ and notes/ from deployment
+├── .vercelignore            # Excludes docs/, notes/, CLAUDE.md from deployment
 └── .gitignore
 ```
 
@@ -71,7 +77,8 @@ Connected to Vercel via GitHub. Every push to `main` triggers an automatic deplo
 
 - `assets/` — cached for 1 year (immutable)
 - `index.html` — always fresh (no-cache)
-- `docs/` and `notes/` — excluded from deployment via `.vercelignore`
+- `sw.js` and `manifest.json` — always fresh (no-cache)
+- `docs/`, `notes/`, `CLAUDE.md` — excluded from deployment via `.vercelignore`
 
 ---
 

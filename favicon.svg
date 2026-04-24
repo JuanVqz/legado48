@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" fill="#03463E" rx="12"/>
-  <text x="32" y="48" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FBEFC5" text-anchor="middle">L48</text>
+  <!-- Background -->
+  <rect width="64" height="64" fill="#0A0A0A" rx="10"/>
+  <!-- Teal accent bar -->
+  <rect x="8" y="8" width="48" height="5" fill="#2A9D8F" rx="2"/>
+  <!-- 48° -->
+  <text x="32" y="50" font-family="Arial Black, Arial, sans-serif" font-size="30" font-weight="900" fill="#F0EDE4" text-anchor="middle">48°</text>
 </svg>
